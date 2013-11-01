@@ -504,22 +504,22 @@ void read_loop(int s) {
 void help() {
 
     fprintf(stderr, 
-"Hello. I am Coherence multicast re-transmitter\n"
+"Hello. I am a multicast re-transmitter\n"
 "I should only be used on network environments where there is no multicast\n"
-"routing (e.g. Amazon). If multicast routing is ever enabled, you should\n"
+"delivery (e.g. Amazon). If multicast delivery is ever enabled, you should\n"
 "discontinue using me immedieately, or you may run into some (unknown)\n"
 "unintended consequences.\n"
 "\n"
 "You may need to run me as root, as I need to create raw sockets\n"
 "\n"
 "I require and support the following options:\n"
-"-u IP      required, Coherence unicast address (IP only)\n"
-"-m IP      required, Coherence multicast address (IP only)\n"
+"-u IP      required, unicast address (IP only)\n"
+"-m IP      required, multicast address (IP only)\n"
 #if 0
-"-p port    required, Coherence multicast port\n"
+"-p port    required, multicast port\n"
 #endif
 "-t ip,...  required, list of the IP addresses to retransmit to\n"
-"           (this is the list of coherence nodes)\n"
+"           (this is the list of nodes)\n"
 "-f         daemonize\n"
 "-d         print debug output\n"
 
